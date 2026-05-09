@@ -5,7 +5,7 @@ def cadastrar(Cadastros):
     senha = input("Digite sua senha ")
     for cadastro in Cadastros:
         if cadastro['usuario'] == usuario:
-            print("Usuário já cadastrado!")
+            print("\nUsuário já cadastrado!")
             return
     
     dados = {'usuario': usuario, 'senha': senha}
@@ -20,7 +20,7 @@ def entrar():
     login_valido = False
     for cadastro in Cadastros:
         if cadastro['usuario'] == Usuario and cadastro['senha'] == Senha:
-            print(f"Seja bem vindo {Usuario}")
+            print(f"\nSeja bem vindo {Usuario}")
             login_valido = True
             break
     if not login_valido:
